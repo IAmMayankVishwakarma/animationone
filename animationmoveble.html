@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box{
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            margin:5px;
+          animation-name: box;
+        position:relative;
+        animation-duration: 10s;}
+#box1  { width: 30px;
+       height: 30px;
+       background-color: red;
+       animation-name: box1;
+       position:relative;
+       animation-duration: 10s;
+       animation-delay: 2s;
+       animation-timing-function: ease;}
+    
+#box2    {  width: 30px;
+            height: 30px;
+            background-color: red;
+          animation-name: box2;
+        position:relative;
+        animation-duration:10s;
+         animation-iteration-count: 5 ;
+         animation-timing-function:ease-in;
+        }
+#box3  {  width: 30px;
+            height: 30px;
+            background-color: red;
+          animation-name: box3;
+        position:relative;
+        animation-duration: 10s;
+        animation-iteration-count:infinite;
+        animation-timing-function:ease-out;}
+#box4 {  width: 30px;
+            height: 30px;
+            background-color: red;
+          animation-name: box4;
+        position:relative;
+        animation-duration: 10s;
+     animation-direction:reverse;
+     animation-timing-function:ease-in-out;}
+
+#box5 { width: 30px;
+        height: 30px;
+        background-color: red;
+        animation-name: box5;
+        position:relative;
+        animation-duration:10s;
+        animation-direction:alternate;}
+#box6 { width: 30px;
+        height: 30px;
+        background-color: red;
+        animation-name: box6;
+        position:relative;
+        animation-duration: 10s;
+        animation-direction:alternate-reverse;}
+#box7    {width: 30px;
+        height: 30px;
+        background-color: red;
+        animation-name: box6;
+        position:relative;
+        animation-duration: 10s;
+        animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);}
+
+#box8   {width: 30px;
+        height: 30px;
+        background-color: red;
+        animation-name: box6;
+        position:relative;
+        animation-duration: 10s;
+        animation-direction:alternate-reverse;
+        animation-fill-mode: backwards; 
+    }
+
+    @keyframes box{
+        0%     {background-color: red;left: 0px;top: 0px;}
+        25%    {background-color:green;left: 300px; top:0px}
+        50%    { background-color:blue;left: 300px; top:300px;}
+        75%    {background-color:black;left: 0px;top: 300px;}
+        100%   { background-color:red;left: 0px;top: 0px;}
+    }
+
+    @keyframes box1{
+        0% {background-color: red;left: 0px;top: 0px;}
+        25% {background-color:green;left: 300px; top:0px}
+        50%   { background-color:blue;left: 300px; top:300px;}
+        75%   {background-color:black;left: 0px;top: 300px;}
+        100%  { background-color:red;left: 0px;top: 0px;}
+    }
+
+    @keyframes box2{
+        0% {background-color: red;left: 0px;top: 0px;}
+        25% {background-color:green;left: 300px; top:0px}
+        50%   { background-color:blue;left: 300px; top:300px;}
+        75%   {background-color:black;left: 0px;top: 300px;}
+        100%  { background-color:red;left: 0px;top: 0px;}
+    }
+
+    @keyframes box3{
+        0% {background-color: red;left: 0px;top: 0px;}
+        25% {background-color:green;left: 300px; top:0px}
+        50%   { background-color:blue;left: 300px; top:300px;}
+        75%   {background-color:black;left: 0px;top: 300px;}
+        100%  { background-color:red;left: 0px;top: 0px;}
+    }
+
+    @keyframes box4{
+        0% {background-color: red;left: 0px;top: 0px;}
+        25% {background-color:green;left: 300px; top:0px}
+        50%   { background-color:blue;left: 300px; top:300px;}
+        75%   {background-color:black;left: 0px;top: 300px;}
+        100%  { background-color:red;left: 0px;top: 0px;}
+    }
+@keyframes box5{
+        0%    {background-color: red;left: 0px;top: 0px;}
+        25%   {background-color:green;left: 300px; top:0px}
+        50%   { background-color:blue;left: 300px; top:300px;}
+        75%   {background-color:black;left: 0px;top: 300px;}
+        100%  { background-color:red;left: 0px;top: 0px;}
+    }
+@keyframes box6{
+        0%   {background-color: red;left: 0px;top: 0px;}
+        25%  {background-color:green;left: 300px; top:0px}
+        50%  {background-color:blue;left: 300px; top:300px;}
+        75%  {background-color:black;left: 0px;top: 300px;}
+        100% {background-color:red;left: 0px;top: 0px;}
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<div id="box1"></div>
+<div id="box2"></div>
+<div id="box3"></div>
+<div id="box4"></div>
+<div id="box5"></div>
+<div id="box6"></div>
+<div id="box7"></div>
+<div id="box8"></div>
+</body>
+</html>
